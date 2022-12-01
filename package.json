@@ -9,6 +9,7 @@
 		"web": "expo start --web"
 	},
 	"dependencies": {
+		"@expo/next-adapter": "^4.0.13",
 		"@expo/webpack-config": "^0.17.2",
 		"@reduxjs/toolkit": "^1.9.1",
 		"@types/react": "~18.0.24",
