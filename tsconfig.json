@@ -1,4 +1,12 @@
 {
-  "compilerOptions": {},
-  "extends": "expo/tsconfig.base"
+	"compilerOptions": {
+		"strict": false,
+		"forceConsistentCasingInFileNames": true,
+		"incremental": true,
+		"module": "esnext",
+		"isolatedModules": true,
+		"jsx": "preserve"
+	},
+	"extends": "expo/tsconfig.base",
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
