@@ -9,8 +9,8 @@ import { useGetNewsQuery } from "./redux/apiSlice"
 export const ArticleList = () => {
 	const { data = [] } = useGetNewsQuery()
 
-	const renderItem = ({ item }: { item: Article }) => {
-		return <ArticleRow article={item} />
+	const renderItem = ({ item, index }: { item: Article; index: number }) => {
+		return <ArticleRow article={item} index={index} />
 	}
 
 	return (
@@ -18,7 +18,12 @@ export const ArticleList = () => {
 			<Center>
 				<SearchBar />
 			</Center>
-			<FlashList data={data} renderItem={renderItem} estimatedItemSize={150} />
+			<FlashList
+				data={data}
+				renderItem={renderItem}
+				estimatedItemSize={150}
+				accessibilityLabel="ArticleList"
+			/>
 		</Flex>
 	)
 }
