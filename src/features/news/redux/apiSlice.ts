@@ -18,7 +18,7 @@ export const apiSlice = createApi({
 			query: () => ({
 				url: "arts.json",
 				params: {
-					"api-key": "wijSGhZSRGfsDwXeuaf2gEX9WkHvqywp",
+					"api-key": "",
 				},
 			}),
 			transformResponse: (response: { results: any[] }) => {
