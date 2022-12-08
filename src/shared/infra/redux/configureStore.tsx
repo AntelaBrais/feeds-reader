@@ -22,6 +22,7 @@ const rootReducer = combineReducers({
 const persistConfig = {
 	key: "root",
 	storage: AsyncStorage,
+	blacklist: ["articles"],
 }
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
