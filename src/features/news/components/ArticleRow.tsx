@@ -1,10 +1,13 @@
 import { Link } from "@react-navigation/native"
 import { Row, Column, Image, Text } from "native-base"
 
-import { useSearchArticle } from "../hooks/useSearchArticle"
+import { useAppSelector } from "../../../shared/infra/redux/hooks"
 
 export const ArticleRow = ({ article, index }) => {
-	const { articleTitleIncludesSearch } = useSearchArticle(article.title)
+	const searchText = useAppSelector((state) => state.articles.searchText)
+	const articleTitleIncludesSearch: boolean = article.title
+		.toLowerCase()
+		.includes(searchText.toLowerCase())
 
 	return (
 		<>

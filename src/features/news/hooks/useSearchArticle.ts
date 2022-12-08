@@ -8,13 +8,9 @@ export const useSearchArticle = (articleTitle?: string) => {
 	const searchText = useAppSelector((state) => state.articles.searchText)
 	const dispatch = useAppDispatch()
 
-	const articleTitleIncludesSearch = (articleTitle) => {
-		return articleTitle.title.toLowerCase().includes(searchText.toLowerCase())
-	}
-
 	const handleSearchTextChange = (text) => {
 		dispatch(change(text))
 	}
 
-	return { searchText, handleSearchTextChange, articleTitleIncludesSearch }
+	return { searchText, handleSearchTextChange }
 }
