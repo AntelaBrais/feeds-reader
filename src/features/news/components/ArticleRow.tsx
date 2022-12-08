@@ -3,7 +3,7 @@ import { Row, Column, Image, Text } from "native-base"
 
 import { useSearchArticle } from "../hooks/useSearchArticle"
 
-export const ArticleRow = ({ article }) => {
+export const ArticleRow = ({ article, index }) => {
 	const { articleTitleIncludesSearch } = useSearchArticle(article.title)
 
 	return (
@@ -12,7 +12,8 @@ export const ArticleRow = ({ article }) => {
 			article?.multimedia[0].caption &&
 			articleTitleIncludesSearch ? (
 				<Link
-					to={{ screen: "ArticleDetail", params: { articleUri: article.uri } }}>
+					to={{ screen: "ArticleDetail", params: { articleUri: article.uri } }}
+					accessibilityLabel={`ArticleRow-${index}`}>
 					<Row
 						width="full"
 						padding="2"

@@ -7,7 +7,7 @@ export const SearchBar = () => {
 	const { searchText, handleSearchTextChange } = useSearchArticle()
 
 	return (
-		<VStack my="4" px="6" space="5" width="100%">
+		<VStack my="4" px="6" space="5" width="100%" accessibilityLabel="SearchBar">
 			<VStack width="100%" space="5" alignSelf="center">
 				<Input
 					value={searchText}
