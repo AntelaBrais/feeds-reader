@@ -32,7 +32,6 @@ export const ArticleRow = ({ article, index }) => {
 							size="md"
 						/>
 						<Column flexGrow={1} flexBasis={0}>
-							<Text>{article.uri}</Text>
 							<Text
 								numberOfLines={2}
 								isTruncated
