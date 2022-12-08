@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit"
 
-import { apiSlice } from "../../../features/news/redux/apiNewsSlice"
+import { apiSlice } from "../../../features/news/redux/apiSlice"
 import { articlesSliceReducer } from "../../../features/news/redux/articlesSlice"
 
 const rootReducer = {
