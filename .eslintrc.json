@@ -1,0 +1,6 @@
+{
+	"extends": ["universe/native", "universe/node", "universe/web"],
+	"settings": {
+		"import/ignore": ["react-native"]
+	}
+}

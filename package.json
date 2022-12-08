@@ -63,12 +63,5 @@
 		]
 	},
 	"private": true,
-	"prettier": "@antelab/prettier-config",
-	"eslintConfig": {
-		"extends": [
-			"universe/node",
-			"universe/web",
-			"universe/native"
-		]
-	}
+	"prettier": "@antelab/prettier-config"
 }
