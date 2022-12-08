@@ -1,6 +1,7 @@
 {
 	"expo": {
 		"name": "feeds-reader",
+		"scheme": "feeds-reader",
 		"entryPoint": "./src/shared/infra/expo/index.tsx",
 		"slug": "feeds-reader",
 		"version": "1.0.0",
