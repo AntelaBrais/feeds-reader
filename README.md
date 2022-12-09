@@ -40,6 +40,7 @@ This project can also be tested on a device with the use of the app "Expo Go". A
 - Husky Hooks: With the pre-commit hook I ensure I'm always pushing my code following the decided style.
 - **Cypress**: Intuitive and developer friendly with lots of features and great documentation. Used by PayPal.
 - **GitHub Actions**: I created a minimal CI action that runs the linter rules whenever a Pull Request is made to the main branch, adding an extra layer of feedback loop and security to the code shipped.
+- **Gitmoji**: Even if it seems a silly addition, the use of standarized emojis to reflect the intent of each commit could help analyze the most frequent type of changes to the codebases and helps the developer bound the scope of their commits.
 
 ## Design Patterns
 
